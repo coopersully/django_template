@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block extra_css %}
+    <!-- Extra CSS for this page, if any -->
+{% endblock %}
+
+{% block content %}
+    <div class="row mt-4">
+        <div class="col-12 col-lg-10 col-xl-6 mx-auto mt-4">
+            <div class="text-center">
+                <h1>Welcome home.</h1>
+                <p>
+                    Thanks for using this template! Bootstrap is already imported, so you can easily utilize its
+                    features for responsive and modern web design. Oh, and here's a picture of some kittens:
+                </p>
+                <img src="{% static 'images/kittens.jpg' %}" class="img-fluid rounded" alt="Kitten">
+            </div>
+        </div>
+        <!-- More content here -->
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <!-- Extra JavaScript for this page, if any -->
+{% endblock %}
